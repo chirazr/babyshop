@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none ;
+    color: black;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: mediumpurple;
+}
+
+
+
+
+.navbars{
+    width: 100%;
+    max-width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+
+}
+
+.navbars img{
+    width :100px;
+    margin-right: 100px;
+    display: block;
+	max-width: 100%;
+  }
+
+  .navbars .links{
+    display: flex;
+    gap: 2rem;
+  }
+
+ .buttons{
+    display: flex;
+    gap: 10px;
+ } 
+ .button1{
+    
+
+  background-color: transparent;
+  border: 1px solid mediumslateblue;
+  box-sizing: border-box;
+  color: #00132C;
+  font-family: "Avenir Next LT W01 Bold",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button1:hover,
+.button1:active {
+  outline: 0;
+}
+
+.button1:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button1:before {
+  background-color: mediumslateblue;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.button1:hover:before {
+  background-color: #6DCFF6;
+}
+
+@media (min-width: 768px) {
+  .button1{
+    padding: 16px 32px;
+  }
+}
+ 
